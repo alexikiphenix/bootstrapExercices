@@ -9,9 +9,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="assets/js/script.js"></script>
-    <title>16 navbar - boite de dialogue</title>
+    <title>16 scrollspy - suiveur de scroll</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="45">
+    <!--
+            Le scrollspy suit le scroll de la page et indique dans la nav
+            la position du scroll.
+            Il fonctionne avec 2 éléments :
+                1- une nav ou une liste où sera mis en surbrillance la partie correspondant
+                   à la position du scroll.
+                2- un conteneur dont le contenu est suffisament long pour permmettre
+                   le scroll (déroulement de la page).
+        -->
     <main class="container">
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             <a href="" class="navbar-brand">JoAnime</a>

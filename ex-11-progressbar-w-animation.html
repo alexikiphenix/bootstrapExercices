@@ -29,18 +29,21 @@
 
    
     <script>
-        let mainBar = document.getElementById('mainBar');
+        let mainBar = document.querySelector('#mainBar');
         let i = 0;
         
-       const setBarWidth = (i) =>{            
-                mainBar.style.width = `${i}%`;              
+       const setBarWidth = () =>{   
+            if(i <= 100)    
+            {
+                mainBar.style.width = `${i}%`;  
+                mainBar.innerText = `${i}%`; 
+                console.log(i)              
+                i++;  
+            }            
         }
-
-        do{
-            setInterval(setBarWidth(i), 1000);
-            i++;
-        }
-        while(i < 100)
+        
+        setInterval(setBarWidth, 100); 
+  
         
     </script>
 </body>

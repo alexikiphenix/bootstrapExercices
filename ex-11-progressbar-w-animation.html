@@ -9,7 +9,6 @@
     <title>Test progressbar</title>
 </head>
 <body>
-
     <form class="mb-5 p-5" action="" method="post">
         <fieldset>
             <legend>Infos importantes</legend>
@@ -19,20 +18,17 @@
             </div>
         </fieldset>
         <div class="progress">
-            <div id="mainBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            <div id="mainBar" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
         </div>
         <div class="text-center">
             <button class="btn btn-success m-3" type="submit">Enregistrer</button>
-        </div>
-        
-    </form>
+        </div>        
+    </form>   
 
-   
     <script>
         let mainBar = document.querySelector('#mainBar');
-        let i = 0;
-        
-       const setBarWidth = () =>{   
+        let i = 0;        
+        const setBarWidth = () =>{   
             if(i <= 100)    
             {
                 mainBar.style.width = `${i}%`;  
@@ -40,11 +36,8 @@
                 console.log(i)              
                 i++;  
             }            
-        }
-        
-        setInterval(setBarWidth, 100); 
-  
-        
+        }        
+        setInterval(setBarWidth, 100);           
     </script>
 </body>
 </html>
